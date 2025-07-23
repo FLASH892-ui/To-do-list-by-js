@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="to_do.css">;
+</head>
+<body>
+    <h1>To-do list</h1>
+    <p class="description">Manage your tasks efficiently!</p>
+    <div class="container">
+        <p class="instruction">Enter your tasks below:</p>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <div class="btns">
+            <button id="addTaskButton">Add Task</button>
+            <button id="clearTasksButton">Clear All Selected Tasks</button>
+            <button id="saveTasksButton">Save Tasks</button> // not implemented yet
+            <button id="loadTasksButton">Load Tasks</button> // not implemented yet
+            <button id="deleteAllTasksButton">Delete All Tasks</button> // not implemented yet
+        </div>
+    </div>
+    <div class="container2">
+        <ol id="taskList"></ol>
+    </div>
+    <script src="to_do.js"></script>
+</body>
+</html>
