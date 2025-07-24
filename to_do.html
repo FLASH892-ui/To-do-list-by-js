@@ -4,25 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do list</title>
-    <link rel="stylesheet" href="to_do.css">;
+    <link rel="stylesheet" href="to_do.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>To-do list</h1>
+    <h1>To-do list Generator</h1>
     <p class="description">Manage your tasks efficiently!</p>
     <div class="container">
         <p class="instruction">Enter your tasks below:</p>
         <input type="text" id="taskInput" placeholder="Add a new task">
-        <div class="btns">
-            <button id="addTaskButton">Add Task</button>
-            <button id="clearTasksButton">Clear All Selected Tasks</button>
-            <button id="saveTasksButton">Save Tasks</button> // not implemented yet
-            <button id="loadTasksButton">Load Tasks</button> // not implemented yet
-            <button id="deleteAllTasksButton">Delete All Tasks</button> // not implemented yet
+        <button id="addTaskButton">Add Task</button>
+    </div>
+    <div class="line"></div>
+    <div class="container" style="margin-top: 20px;">
+        <div class="megaDiv">
+            <div class="btns1">
+                <button id="saveTasksButton"><i class="fa-solid fa-upload"></i></button> 
+                <button id="loadTasksButton"><i class="fa-solid fa-download"></i></button>
+            </div>
+            <div class="btns2">
+                <button id="clearTasksButton"><i class="fa-solid fa-delete-left"></i></button> 
+                <button id="deleteAllTasksButton"><i class="fa-solid fa-trash-can"></i></button> 
+            </div>
         </div>
+        <h2>To-do List</h2>
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th class="sl">Serial No.</th>
+                    <th class="task">Task</th>
+                    <th class="status">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
-    <div class="container2">
-        <ol id="taskList"></ol>
-    </div>
+    
     <script src="to_do.js"></script>
 </body>
 </html>
