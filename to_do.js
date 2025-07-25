@@ -91,3 +91,6 @@ deleteAllTasksBtn.addEventListener('keypress', (event) => {
         deleteAllTasksBtn.click();
     }
 });
+input.addEventListener('focus', () => {
+    input.style.outline = '0.5px solid #ccc';
+})
