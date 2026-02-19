@@ -1,40 +1,32 @@
 # Deployment Instructions
 
-Since you want to push both `default-langs` and `vite-react-ts-tailwind` together, you should run these commands effectively from the root directory (`To-do list by js`).
-
-## Where will this be deployed?
-
-This project is currently configured to deploy to **GitHub Pages**.
-
--   **URL**: `https://<your-username>.github.io/<your-repo-name>/`
--   **Branch**: The deployment script pushes the built files to the `gh-pages` branch.
-
-### Alternative: Vercel / Netlify
-If you prefer to use **Vercel** or **Netlify**, you do **not** need to run `npm run deploy`.
-1.  Push your code to GitHub as described below.
-2.  Go to Vercel/Netlify dashboard and import your GitHub repository.
-3.  Select the **vite-react-ts-tailwind** folder as the "Root Directory".
-4.  The platform will automatically detect the settings and deploy.
-
----
-
-## Steps to Deploy to GitHub Pages
-
 1.  **Push Your Code**
-    Open your terminal in the root folder (`To-do list by js`) and run:
-    ```bash
-    git add .
-    git commit -m "Add vite-react-ts-tailwind project"
-    git push origin main
-    ```
+    *   Initialize: `git init` (if needed)
+    *   Add origin: `git remote add origin https://github.com/FLASH892-ui/To-do-list-by-js.git`
+    *   Push:
+        ```bash
+        git add .
+        git commit -m "Add root README and deployment docs"
+        git push origin main
+        ```
 
 2.  **Deploy the Vite App**
-    Your root repository will now contain both projects. To deploy just the Vite app to GitHub Pages:
-    
-    Open your terminal in the `vite-react-ts-tailwind` folder:
-    ```bash
-    cd vite-react-ts-tailwind
-    npm run deploy
-    ```
-    
-    This will build the app and publish it to the `gh-pages` branch of your repository.
+    *   Navigate to the project folder:
+        ```bash
+        cd vite-react-ts-tailwind
+        ```
+    *   Run the deploy script:
+        ```bash
+        npm run deploy
+        ```
+
+3.  **Update GitHub "About" Section**
+    *   Go to your repository page: [https://github.com/FLASH892-ui/To-do-list-by-js](https://github.com/FLASH892-ui/To-do-list-by-js)
+    *   Click the **Gear icon (⚙️)** next to "About".
+    *   Check "Use your README" (if available) OR verify that the **README.md** we just created is displayed prominently on the main page.
+    *   In the **Website** field, you can keep your Vanilla JS link or switch to the React one. The README now lists BOTH, so visitors will see them immediately.
+
+4.  **Verify Settings**
+    *   Your repository's main page will now show the `README.md` which has links to:
+        *   Vanilla JS Version: `https://to-do-list-by-js-mu.vercel.app`
+        *   React Version: `https://FLASH892-ui.github.io/To-do-list-by-js/`
