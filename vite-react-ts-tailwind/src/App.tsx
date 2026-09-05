@@ -23,7 +23,7 @@ function App() {
   };
 
   const deleteTask = (id: number) => {
-    setTasks(tasks.filter(task => task.id !== id));
+    setTasks(tasks.filter((task: Task) => task.id !== id));
   };
 
   const saveTasks = () => {
